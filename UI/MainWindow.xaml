@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Button Grid.Row="1" Grid.Column="1">Последовательное создание персонажа</Button>
+        <Button Grid.Row="3" Grid.Column="1">Интерактивное создание персонажа</Button>
+        <Button Grid.Row="5" Grid.Column="1">Справочная информация</Button>
+        <Button Grid.Row="7" Grid.Column="1">Сохранённые листы персонажа</Button>
     </Grid>
 </Window>
