@@ -1,11 +1,11 @@
-﻿<Window x:Class="UI.MainWindow"
+﻿<Window x:Class="UI.Interactive_Form"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Interactive_Form" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -13,20 +13,19 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Button Grid.Row="2" Grid.Column="1" Height="50" Width="200" Click="Button_Click">Друидом</Button>
+        <Button Grid.Row="3" Grid.Column="1" Height="50" Width="200">Вариант2</Button>
+        <Button Grid.Row="4" Grid.Column="1" Height="50" Width="200">Варинат3</Button>
+        <Button Grid.Row="5" Grid.Column="0">Назад</Button>
+        <Label Name="Question" Grid.Column="1" Content="Кем вы хотите стать?" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Button Grid.Row="1" Grid.Column="1">Последовательное создание персонажа</Button>
-        <Button Grid.Row="3" Grid.Column="1" Click="Button_Click">Интерактивное создание персонажа</Button>
-        <Button Grid.Row="5" Grid.Column="1">Справочная информация</Button>
-        <Button Grid.Row="7" Grid.Column="1">Сохранённые листы персонажа</Button>
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -10,25 +11,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UI
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-		}
+    /// <summary>
+    /// Логика взаимодействия для Interactive_Form.xaml
+    /// </summary>
+    public partial class Interactive_Form : Window
+    {
+        public Interactive_Form()
+        {
+            InitializeComponent();
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Interactive_Form taskWindow = new Interactive_Form();
-            taskWindow.Show();
+            Question.Content = "Поздравляю, вы Друид!";
+
         }
     }
 }
